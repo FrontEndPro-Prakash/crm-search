@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search Intelligence</title>
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="pkt-wrapper">
+      <div class="pkt-maincontent">
+        <div class="row">
+          <div class="col-md-7">
+            <form>
+              <div class="form-group has-feedback">
+                <input type="text" class="form-control" value="Sbastian">
+                <a href="javascript:void(0);" class="pkt-searchicon"><img src="img/search-icon.svg"></a>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5">
+            <div class="pkt-dropdown">
+              <h5>Result Per Page</h5>
+              <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  100
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a href="#">25</a></li>
+                  <li><a href="#">50</a></li>
+                  <li><a href="#">75</a></li>
+                  <li><a href="#">100</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 pkt-heading3">
+            <h3>Did you mean: "<span class="gbg-orange-color">Sabastian</span>"</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="pkt-filter-box">
+              <div class="pkt-searchbox">
+                <h4>People</h4>
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <a href="javascript:void(0);" class="pkt-searchicon"><img src="img/search-icon.svg"></a>
+                </div>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>Lead (105)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Contact (103)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Author (124)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Marketing Reviewer (103)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Technical Reviewer (142)
+                </label>
+              </div>
+              <div class="pkt-searchbox">
+                <h4>Known Since</h4>
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <a href="javascript:void(0);" class="pkt-searchicon"><img src="img/search-icon.svg"></a>
+                </div>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>2021 (214)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>2020 (422)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>2019 (1452)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>2018 (147)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>2017 (1245)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>>5 Years (2145)
+                </label>
+              </div>
+              <div class="pkt-searchbox">
+                <h4>Contactable</h4>
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <a href="javascript:void(0);" class="pkt-searchicon"><img src="img/search-icon.svg"></a>
+                </div>
+                <div class="position-relative">
+                  <label class="pkt-checkbox">
+                    <input type="checkbox" checked="checked">
+                    <span class="pkt-checkmark"></span>Happy to be Contacted (1845)
+                  </label>
+                  <span class="pkt-dots pkt-dotgreen"></span>
+                </div>
+                <div class="position-relative">
+                  <label class="pkt-checkbox">
+                    <input type="checkbox">
+                    <span class="pkt-checkmark"></span>Do not Contact (756)
+                  </label>
+                  <span class="pkt-dots pkt-dotred"></span>
+                </div>
+                <div class="position-relative">
+                  <label class="pkt-checkbox">
+                    <input type="checkbox">
+                    <span class="pkt-checkmark"></span>No Inputs (11454)
+                  </label>
+                  <span class="pkt-dots pkt-dotorange"></span>
+                </div>
+              </div>
+              <div class="pkt-searchbox">
+                <h4>Last Activity</h4>
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <a href="javascript:void(0);" class="pkt-searchicon"><img src="img/search-icon.svg"></a>
+                </div>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>2021 (451)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>2020 (784)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>>2 Years (154)
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="pkt-filter-page">
+              <h4>Showing 1-100 of 852</h4>
+              <nav aria-label="Page navigation">
+                <ul class="pagination">
+                  <li>
+                    <a href="#" aria-label="Previous" class="previous">
+                      <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.111 10.843"><path d="M556.492,288.685l-5.237,7.226H546.9l6.65-9.068-6.591-8.043h4.325l5.193,6.489,1.265,1.57Z" transform="translate(295.911 -546.9) rotate(90)" fill="#34444e"/></svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li>
+                    <a href="#" aria-label="Next" class="next">
+                      <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.111 10.843"><path d="M556.492,288.685l-5.237,7.226H546.9l6.65-9.068-6.591-8.043h4.325l5.193,6.489,1.265,1.57Z" transform="translate(295.911 -546.9) rotate(90)" fill="#34444e"/></svg>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="pkt-dropdown pkt-dropdown-search">
+                <h5>Sort By</h5>
+                <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Closest Match
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <li><a href="#">A - Z Last Name</a></li>
+                    <li><a href="#">Z- A Last Name</a></li>
+                    <li><a href="#">Date Created: Newest First</a></li>
+                    <li><a href="#">Date Created: Oldest First</a></li>
+                    <li><a href="#">Last Modified: Newest First</a></li>
+                    <li><a href="#">Last Modified: Oldest First</a></li>
+                    <li><a href="#">Author Rank: Lowest to Highest</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="pkt-table">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Role</th>
+                      <th>Email</th>
+                      <th width="150">Known Since</th>
+                      <th>Last Activity</th>
+                      <th width="100">Social</th>
+                      <th>Edit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="pkt-userstatus">
+                          <span class="pkt-dots pkt-dotred"></span>
+                          <p class="pkt-textwithdot">Sabastian Martin</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="pkt-users-role">
+                          <img src="img/user-role-plus.svg" alt="" width="40" height="30">
+                          <img src="img/user-role-edit.svg" alt="" width="40" height="30">
+                        </div>
+                        <p class="pkt-fs18">Author, Technical Reviewer</p>
+                      </td>
+                      <td>
+                        <a href="mailto:txebas@gmail.com" class="gbg-orange-color">txebas@gmail.com</a>
+                      </td>
+                      <td align="center">2021</td>
+                      <td align="center">4/23/2021 12:30pm</td>
+                      <td align="center">
+                        <div class="pkt-userright-part">
+                          <a href="https://twitter.com/i/flow/login" target="_blank"><img src="img/twitter-icon.svg" alt=""></a>
+                          <a href="https://www.linkedin.com/signup" target="_blank"><img src="img/linkdin-icon.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-userstatus">
+                          <span class="pkt-dots pkt-dotgreen"></span>
+                          <p class="pkt-textwithdot">Sabastian Parawolowski</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="pkt-users-role">
+                          <img src="img/user-role-plus.svg" alt="" width="40" height="30">
+                        </div>
+                        <p class="pkt-fs18">Lead, Author, Technical Reviewer, Marketing Reviewer</p>
+                      </td>
+                      <td>
+                        <a href="mailto:txebas@gmail.com" class="gbg-orange-color">txebas@gmail.com</a>
+                      </td>
+                      <td align="center">2020</td>
+                      <td align="center">4/23/2021 12:30pm</td>
+                      <td align="center">
+                        <div class="pkt-userright-part">
+                          <a href="https://twitter.com/i/flow/login" target="_blank"><img src="img/twitter-icon.svg" alt=""></a>
+                          <a href="https://www.linkedin.com/signup" target="_blank"><img src="img/linkdin-icon.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-userstatus">
+                          <span class="pkt-dots pkt-dotorange"></span>
+                          <p class="pkt-textwithdot">Sabastian Welsh</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="pkt-users-role">
+                          <img src="img/user-role-users.svg" alt="" width="40" height="30">
+                          <img src="img/user-role-fav.svg" alt="" width="40" height="30">
+                        </div>
+                        <p class="pkt-fs18">Author, Technical Reviewer</p>
+                      </td>
+                      <td>
+                        <a href="mailto:txebas@gmail.com" class="gbg-orange-color">txebas@gmail.com</a>
+                      </td>
+                      <td align="center">2021</td>
+                      <td align="center">4/23/2021 12:30pm</td>
+                      <td align="center">
+                        <div class="pkt-userright-part">
+                          <a href="https://twitter.com/i/flow/login" target="_blank"><img src="img/twitter-icon.svg" alt=""></a>
+                          <a href="https://www.linkedin.com/signup" target="_blank"><img src="img/linkdin-icon.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-userstatus">
+                          <span class="pkt-dots pkt-dotred"></span>
+                          <p class="pkt-textwithdot">Sabastian Blei</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="pkt-users-role">
+                          <img src="img/user-role-plus.svg" alt="" width="40" height="30">
+                          <img src="img/user-role-edit.svg" alt="" width="40" height="30">
+                          <img src="img/user-role-users.svg" alt="" width="40" height="30">
+                          <img src="img/user-role-fav.svg" alt="" width="40" height="30">
+                          <img src="img/user-role-plusicon.svg" alt="" width="30" height="20">
+                        </div>
+                        <p class="pkt-fs18">Lead, Marketing Reviewer</p>
+                      </td>
+                      <td>
+                        <a href="mailto:txebas@gmail.com" class="gbg-orange-color">txebas@gmail.com</a>
+                      </td>
+                      <td align="center">2021</td>
+                      <td align="center">4/23/2021 12:30pm</td>
+                      <td align="center">
+                        <div class="pkt-userright-part">
+                          <a href="https://twitter.com/i/flow/login" target="_blank"><img src="img/twitter-icon.svg" alt=""></a>
+                          <a href="https://www.linkedin.com/signup" target="_blank"><img src="img/linkdin-icon.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-userstatus">
+                          <span class="pkt-dots pkt-dotgreen"></span>
+                          <p class="pkt-textwithdot">Sabastian Martin</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="pkt-users-role">
+                          <img src="img/user-role-plus.svg" alt="" width="40" height="30">
+                          <img src="img/user-role-edit.svg" alt="" width="40" height="30">
+                        </div>
+                        <p class="pkt-fs18">Author, Technical Reviewer</p>
+                      </td>
+                      <td>
+                        <a href="mailto:txebas@gmail.com" class="gbg-orange-color">txebas@gmail.com</a>
+                      </td>
+                      <td align="center">2021</td>
+                      <td align="center">4/23/2021 12:30pm</td>
+                      <td align="center">
+                        <div class="pkt-userright-part">
+                          <a href="https://twitter.com/i/flow/login" target="_blank"><img src="img/twitter-icon.svg" alt=""></a>
+                          <a href="https://www.linkedin.com/signup" target="_blank"><img src="img/linkdin-icon.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-userstatus">
+                          <span class="pkt-dots pkt-dotred"></span>
+                          <p class="pkt-textwithdot">Sabastian Martin</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="pkt-users-role">
+                          <img src="img/user-role-edit.svg" alt="" width="40" height="30">
+                        </div>
+                        <p class="pkt-fs18">Lead, Author, Technical Reviewer</p>
+                      </td>
+                      <td>
+                        <a href="mailto:txebas@gmail.com" class="gbg-orange-color">txebas@gmail.com</a>
+                      </td>
+                      <td align="center">2019</td>
+                      <td align="center">4/23/2021 12:30pm</td>
+                      <td align="center">
+                        <div class="pkt-userright-part">
+                          <a href="https://twitter.com/i/flow/login" target="_blank"><img src="img/twitter-icon.svg" alt=""></a>
+                          <a href="https://www.linkedin.com/signup" target="_blank"><img src="img/linkdin-icon.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-userstatus">
+                          <span class="pkt-dots pkt-dotorange"></span>
+                          <p class="pkt-textwithdot">Lead, Marketing Reviewer</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="pkt-users-role">
+                          <img src="img/user-role-edit.svg" alt="" width="40" height="30">
+                        </div>
+                        <p class="pkt-fs18">Lead, Author, Technical Reviewer</p>
+                      </td>
+                      <td>
+                        <a href="mailto:txebas@gmail.com" class="gbg-orange-color">txebas@gmail.com</a>
+                      </td>
+                      <td align="center">2019</td>
+                      <td align="center">4/23/2021 12:30pm</td>
+                      <td align="center">
+                        <div class="pkt-userright-part">
+                          <a href="https://twitter.com/i/flow/login" target="_blank"><img src="img/twitter-icon.svg" alt=""></a>
+                          <a href="https://www.linkedin.com/signup" target="_blank"><img src="img/linkdin-icon.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

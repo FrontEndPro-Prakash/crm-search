@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search Intelligence</title>
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="pkt-wrapper">
+      <div class="pkt-maincontent">
+        <div class="row">
+          <div class="col-md-7">
+            <form>
+              <div class="form-group has-feedback">
+                <input type="text" class="form-control" value="Programming">
+                <a href="javascript:void(0);" class="pkt-searchicon"><img src="img/search-icon.svg"></a>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5">
+            <div class="pkt-dropdown">
+              <h5>Result Per Page</h5>
+              <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  100
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a href="#">25</a></li>
+                  <li><a href="#">50</a></li>
+                  <li><a href="#">75</a></li>
+                  <li><a href="#">100</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 pkt-heading3">
+            <h3>Did you mean: "<span class="gbg-orange-color">Programming</span>"</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="pkt-filter-box">
+              <div class="pkt-searchbox">
+                <h4>Product Type</h4>
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <a href="javascript:void(0);" class="pkt-searchicon"><img src="img/search-icon.svg"></a>
+                </div>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>Book (1847)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Video (952)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Course (452)
+                </label>
+              </div>
+              <div class="pkt-searchbox">
+                <h4>Business Unit</h4>
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <a href="javascript:void(0);" class="pkt-searchicon"><img src="img/search-icon.svg"></a>
+                </div>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>Explorer (2549)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Expert Network (952)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Learning (1955)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>PCC (772)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>External Publisher (772)
+                </label>
+              </div>
+              <div class="pkt-searchbox">
+                <h4>Status</h4>
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <a href="javascript:void(0);" class="pkt-searchicon"><img src="img/search-icon.svg"></a>
+                </div>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>Published (2549)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>LS Uploaded (952)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>In Production (1955)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Committed (2772)
+                </label>
+              </div>
+              <div class="pkt-searchbox">
+                <h4>Publication Date or PPD</h4>
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <a href="javascript:void(0);" class="pkt-searchicon"><img src="img/search-icon.svg"></a>
+                </div>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>September 2021 (10)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>August 2021 (13)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>July 2021 (14)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>May 2021 (09)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>December 2020 (15)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>November 2020 (13)
+                </label>
+              </div>
+              <div class="pkt-searchbox">
+                <h4>Language</h4>
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <a href="javascript:void(0);" class="pkt-searchicon"><img src="img/search-icon.svg"></a>
+                </div>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>C# (202)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>C++ (147)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Java (402)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>JavaScript (299)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>PHP (91)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Python (332)
+                </label>
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <a href="javascript:void(0);" class="pkt-searchicon"><img src="img/search-icon.svg"></a>
+                </div>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>Visual Studio (56)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Spring (38)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>.NET Core (38)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>Unity (30)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Java EE (29)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>.NET (27)
+                </label>
+              </div>
+              <div class="pkt-searchbox">
+                <h4>Category</h4>
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <a href="javascript:void(0);" class="pkt-searchicon"><img src="img/search-icon.svg"></a>
+                </div>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>IoT & Hardware (239)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Business & Other (354)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Cloud & Networking (274)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>Data (301)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Mobile (233)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Game Development (594)
+                </label>
+              </div>
+              <div class="pkt-searchbox">
+                <h4>Concepts</h4>
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <a href="javascript:void(0);" class="pkt-searchicon"><img src="img/search-icon.svg"></a>
+                </div>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>Microcontroller (36)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Wearable Tech (32)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox">
+                  <span class="pkt-checkmark"></span>Soft Skills (12)
+                </label>
+                <label class="pkt-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <span class="pkt-checkmark"></span>Information Management (28)
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="pkt-filter-page">
+              <h4>Showing 1-100 of 5,852</h4>
+              <nav aria-label="Page navigation">
+                <ul class="pagination">
+                  <li>
+                    <a href="#" aria-label="Previous" class="previous">
+                      <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.111 10.843"><path d="M556.492,288.685l-5.237,7.226H546.9l6.65-9.068-6.591-8.043h4.325l5.193,6.489,1.265,1.57Z" transform="translate(295.911 -546.9) rotate(90)" fill="#34444e"/></svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li>
+                    <a href="#" aria-label="Next" class="next">
+                      <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.111 10.843"><path d="M556.492,288.685l-5.237,7.226H546.9l6.65-9.068-6.591-8.043h4.325l5.193,6.489,1.265,1.57Z" transform="translate(295.911 -546.9) rotate(90)" fill="#34444e"/></svg>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="pkt-dropdown pkt-dropdown-search">
+                <h4>Sort By</h4>
+                <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Closest Match
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <li><a href="#">A - Z Last Name</a></li>
+                    <li><a href="#">Z- A Last Name</a></li>
+                    <li><a href="#">Date Created: Newest First</a></li>
+                    <li><a href="#">Date Created: Oldest First</a></li>
+                    <li><a href="#">Last Modified: Newest First</a></li>
+                    <li><a href="#">Last Modified: Oldest First</a></li>
+                    <li><a href="#">Author Rank: Lowest to Highest</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="pkt-table">
+              <div class="table-responsive">
+                <table class="table pkt-collapse-table">
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Author(s)</th>
+                      <th>Product ID</th>
+                      <th width="160">Status</th>
+                      <th>Price</th>
+                      <th width="200">Amazon Rating</th>
+                      <th>Edit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="pkt-bookstatus">
+                          <img src="img/book-icon-table.svg" alt="" width="12" height="18">
+                          <a href="javascript:void(0);" class="pkt-textwithdot gbg-orange-color">Mongo DB and Python</a>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);" class="gbg-orange-color">Konimski Lazardo</a>
+                      </td>
+                      <td>B02331 - C1</td>
+                      <td align="center" class="pkt-lightgreen">Published</td>
+                      <td align="center">$27.99</td>
+                      <td align="center">
+                        <div class="d-flex j-c-sp">
+                          <div class="pkt-userright-part">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                          </div>
+                          <a href="javascript:void(0);" data-toggle="collapse" data-target="#pkt-tablecollaps1" class="accordion-toggle"><img src="img/drop-arrow.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="pkt-collapse">
+                        <div id="pkt-tablecollaps1" class="accordian-body collapse" aria-expanded="true">
+                          <div class="pkt-innercollapse">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-md-3 col-sm-4">
+                                  <p>ISBN - <b>9781849685160</b></p>
+                                  <p>Business Unit - <b>Explorer</b></p>
+                                  <p>Publishing Date - <b>4/23/2021 12:30pm</b></p>
+                                </div>
+                                <div class="col-md-3 col-sm-4">
+                                  <p>Concept - <b>2D Game Development</b></p>
+                                  <p>Category - <b>Game Development</b></p>
+                                </div>
+                                <div class="col-md-3 col-sm-4">
+                                  <p>Product Type - <b>Book</b> </p>
+                                  <p>Language - <b>Assembly</b> </p>
+                                </div>
+                                <div class="col-md-3 col-sm-4">
+                                  <p>Tool - <b>CentOS</b></p>
+                                  <p>Vendor - <b>Autodesk</b></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-bookstatus">
+                          <img src="img/video-icon-table.svg" alt="" width="12" height="18">
+                          <a href="javascript:void(0);" class="pkt-textwithdot gbg-orange-color">Python for Ethical Hackers and Pentesters</a>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);" class="gbg-orange-color">Emma Raducanu</a>
+                      </td>
+                      <td>V05506 - C2</td>
+                      <td align="center" class="pkt-yellow">Contracted</td>
+                      <td align="center">$124.99</td>
+                      <td align="center">
+                        <div class="d-flex j-c-sp">
+                          <div class="pkt-userright-part">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                          </div>
+                          <a href="javascript:void(0);" data-toggle="collapse" data-target="#pkt-tablecollaps2" class="accordion-toggle"><img src="img/drop-arrow.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="pkt-collapse">
+                        <div id="pkt-tablecollaps2" class="accordian-body collapse" aria-expanded="true">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-bookstatus">
+                          <img src="img/hat-icon-table.svg" alt="" width="12" height="18">
+                          <a href="javascript:void(0);" class="pkt-textwithdot gbg-orange-color">Learning Penetration Testing with Python, Second Edition</a>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);" class="gbg-orange-color">Stefanski Geolli Makraskava</a>
+                      </td>
+                      <td>B11580 - C1</td>
+                      <td align="center" class="pkt-lightgreen">In-Development</td>
+                      <td align="center">$44.99</td>
+                      <td align="center">
+                        <div class="d-flex j-c-sp">
+                          <div class="pkt-userright-part">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                          </div>
+                          <a href="javascript:void(0);" data-toggle="collapse" data-target="#pkt-tablecollaps3" class="accordion-toggle"><img src="img/drop-arrow.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="pkt-collapse">
+                        <div id="pkt-tablecollaps3" class="accordian-body collapse" aria-expanded="true">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-bookstatus">
+                          <img src="img/book-icon-table.svg" alt="" width="12" height="18">
+                          <a href="javascript:void(0);" class="pkt-textwithdot gbg-orange-color">Hadoop for Python Developers Cookbook</a>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);" class="gbg-orange-color">Harish Parwardhan</a>
+                      </td>
+                      <td>B01075</td>
+                      <td align="center" class="pkt-lightgreen">Committed</td>
+                      <td align="center">$54.99</td>
+                      <td align="center">
+                        <div class="d-flex j-c-sp">
+                          <div class="pkt-userright-part">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                          </div>
+                          <a href="javascript:void(0);" data-toggle="collapse" data-target="#pkt-tablecollaps4" class="accordion-toggle"><img src="img/drop-arrow.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="pkt-collapse">
+                        <div id="pkt-tablecollaps4" class="accordian-body collapse" aria-expanded="true">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-bookstatus">
+                          <img src="img/video-icon-table.svg" alt="" width="12" height="18">
+                          <a href="javascript:void(0);" class="pkt-textwithdot gbg-orange-color">Python for Ethical Hackers and Pentesters</a>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);" class="gbg-orange-color">Emma Raducanu</a>
+                      </td>
+                      <td>V05506 - C2</td>
+                      <td align="center" class="pkt-yellow">Contracted</td>
+                      <td align="center">$124.99</td>
+                      <td align="center">
+                        <div class="d-flex j-c-sp">
+                          <div class="pkt-userright-part">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                          </div>
+                          <a href="javascript:void(0);" data-toggle="collapse" data-target="#pkt-tablecollaps5" class="accordion-toggle"><img src="img/drop-arrow.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="pkt-collapse">
+                        <div id="pkt-tablecollaps5" class="accordian-body collapse" aria-expanded="true">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-bookstatus">
+                          <img src="img/hat-icon-table.svg" alt="" width="12" height="18">
+                          <a href="javascript:void(0);" class="pkt-textwithdot gbg-orange-color">Learning Penetration Testing with Python, Second Edition</a>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);" class="gbg-orange-color">Stefanski Geolli  Makraskava</a>
+                      </td>
+                      <td>B11580 - C1</td>
+                      <td align="center" class="pkt-lightgreen">In-Development</td>
+                      <td align="center">$44.99</td>
+                      <td align="center">
+                        <div class="d-flex j-c-sp">
+                          <div class="pkt-userright-part">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                          </div>
+                          <a href="javascript:void(0);" data-toggle="collapse" data-target="#pkt-tablecollaps6" class="accordion-toggle"><img src="img/drop-arrow.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="pkt-collapse">
+                        <div id="pkt-tablecollaps6" class="accordian-body collapse" aria-expanded="true">
+                          <div class="container-fluid">
+                            <div class="row">
+                            <div class="col-md-12">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                              </div>
+                          </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-bookstatus">
+                          <img src="img/video-icon-table.svg" alt="" width="12" height="18">
+                          <a href="javascript:void(0);" class="pkt-textwithdot gbg-orange-color">Python for Ethical Hackers and Pentesters</a>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);" class="gbg-orange-color">Emma Raducanu</a>
+                      </td>
+                      <td>V05506 - C2</td>
+                      <td align="center" class="pkt-yellow">Contracted</td>
+                      <td align="center">$124.99</td>
+                      <td align="center">
+                        <div class="d-flex j-c-sp">
+                          <div class="pkt-userright-part">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                          </div>
+                          <a href="javascript:void(0);" data-toggle="collapse" data-target="#pkt-tablecollaps7" class="accordion-toggle"><img src="img/drop-arrow.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="pkt-collapse">
+                        <div id="pkt-tablecollaps7" class="accordian-body collapse" aria-expanded="true">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-bookstatus">
+                          <img src="img/hat-icon-table.svg" alt="" width="12" height="18">
+                          <a href="javascript:void(0);" class="pkt-textwithdot gbg-orange-color">Learning Penetration Testing with Python, Second Edition</a>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);" class="gbg-orange-color">Stefanski Geolli Makraskava</a>
+                      </td>
+                      <td>B11580 - C1</td>
+                      <td align="center" class="pkt-lightgreen">In-Development</td>
+                      <td align="center">$44.99</td>
+                      <td align="center">
+                        <div class="d-flex j-c-sp">
+                          <div class="pkt-userright-part">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                          </div>
+                          <a href="javascript:void(0);" data-toggle="collapse" data-target="#pkt-tablecollaps8" class="accordion-toggle"><img src="img/drop-arrow.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="pkt-collapse">
+                        <div id="pkt-tablecollaps8" class="accordian-body collapse" aria-expanded="true">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-bookstatus">
+                          <img src="img/book-icon-table.svg" alt="" width="12" height="18">
+                          <a href="javascript:void(0);" class="pkt-textwithdot gbg-orange-color">Hadoop for Python Developers Cookbook</a>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);" class="gbg-orange-color">Harish Parwardhan</a>
+                      </td>
+                      <td>B01075</td>
+                      <td align="center" class="pkt-lightgreen">Committed</td>
+                      <td align="center">$54.99</td>
+                      <td align="center">
+                        <div class="d-flex j-c-sp">
+                          <div class="pkt-userright-part">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                          </div>
+                          <a href="javascript:void(0);" data-toggle="collapse" data-target="#pkt-tablecollaps9" class="accordion-toggle"><img src="img/drop-arrow.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="pkt-collapse">
+                        <div id="pkt-tablecollaps9" class="accordian-body collapse" aria-expanded="true">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-bookstatus">
+                          <img src="img/video-icon-table.svg" alt="" width="12" height="18">
+                          <a href="javascript:void(0);" class="pkt-textwithdot gbg-orange-color">Python for Ethical Hackers and Pentesters</a>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);" class="gbg-orange-color">Emma Raducanu</a>
+                      </td>
+                      <td>V05506 - C2</td>
+                      <td align="center" class="pkt-yellow">Contracted</td>
+                      <td align="center">$124.99</td>
+                      <td align="center">
+                        <div class="d-flex j-c-sp">
+                          <div class="pkt-userright-part">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                          </div>
+                          <a href="javascript:void(0);" data-toggle="collapse" data-target="#pkt-tablecollaps10" class="accordion-toggle"><img src="img/drop-arrow.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="pkt-collapse">
+                        <div id="pkt-tablecollaps10" class="accordian-body collapse" aria-expanded="true">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="pkt-bookstatus">
+                          <img src="img/hat-icon-table.svg" alt="" width="12" height="18">
+                          <a href="javascript:void(0);" class="pkt-textwithdot gbg-orange-color">Learning Penetration Testing with Python, Second Edition</a>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);" class="gbg-orange-color">Stefanski Geolli  Makraskava</a>
+                      </td>
+                      <td>B11580 - C1</td>
+                      <td align="center" class="pkt-lightgreen">In-Development</td>
+                      <td align="center">$44.99</td>
+                      <td align="center">
+                        <div class="d-flex j-c-sp">
+                          <div class="pkt-userright-part">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/fill-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                            <img src="img/blank-star-icon.svg" alt="">
+                          </div>
+                          <a href="javascript:void(0);" data-toggle="collapse" data-target="#pkt-tablecollaps11" class="accordion-toggle"><img src="img/drop-arrow.svg" alt=""></a>
+                        </div>
+                      </td>
+                      <td align="center">
+                        <a href="javascript:void(0);" class="pkt-fs18"><i class="fa fa-edit"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="pkt-collapse">
+                        <div id="pkt-tablecollaps11" class="accordian-body collapse" aria-expanded="true">
+                          <div class="container-fluid">
+                            <div class="row">
+                            <div class="col-md-12">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                              </div>
+                          </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
